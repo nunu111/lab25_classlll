@@ -82,7 +82,7 @@ bool ComplexNumber::operator==(const ComplexNumber &c){
 }
 
 bool operator==(double s,const ComplexNumber &c){
-	if(s == c.real && s == c.imag) return true;
+	if(s == c.real && 0 == c.imag) return true;
 	else return false;
 }
 
